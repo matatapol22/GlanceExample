@@ -26,7 +26,6 @@ import androidx.glance.layout.fillMaxSize
 import androidx.glance.layout.padding
 import androidx.glance.text.FontWeight
 import androidx.glance.text.TextStyle
-import com.example.glanceexample.PriceDataRepo
 import com.example.glanceexample.R
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
