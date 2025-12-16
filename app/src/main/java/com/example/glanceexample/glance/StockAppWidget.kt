@@ -1,7 +1,6 @@
-package com.example.glanceexample
+package com.example.glanceexample.glance
 
 import android.content.Context
-import androidx.glance.text.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.unit.dp
 import androidx.glance.GlanceId
@@ -13,6 +12,8 @@ import androidx.glance.background
 import androidx.glance.layout.Column
 import androidx.glance.layout.fillMaxSize
 import androidx.glance.layout.padding
+import androidx.glance.text.Text
+
 class StockAppWidget : GlanceAppWidget() {
 
     override suspend fun provideGlance(context: Context, id: GlanceId) {
@@ -26,10 +27,11 @@ class StockAppWidget : GlanceAppWidget() {
 
     @Composable
     fun GlanceContent() {
-        Column(modifier = GlanceModifier
-            .fillMaxSize()
-            .background(GlanceTheme.colors.background)
-            .padding(8.dp)
+        Column(
+            modifier = GlanceModifier.Companion
+                .fillMaxSize()
+                .background(GlanceTheme.colors.background)
+                .padding(8.dp)
         ) {
             Text("Demo")
         }
